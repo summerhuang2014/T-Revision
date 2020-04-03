@@ -22,7 +22,7 @@ parser.add_argument('--weight_decay', type=float, help='weight_decay for trainin
 parser.add_argument('--model_dir', type=str, help='dir to save model files', default='model')
 parser.add_argument('--prob_dir', type=str, help='dir to save output probability files', default='prob' )
 parser.add_argument('--matrix_dir', type=str, help='dir to save estimated matrix', default='matrix')
-parser.add_argument('--dataset', type = str, help = 'mnist, cifar10, or cifar100', default = 'cifar10')
+parser.add_argument('--dataset', type = str, help = 'mnist, cifar10, or cifar100', default = 'mnist')
 parser.add_argument('--n_epoch', type=int, default=200)
 parser.add_argument('--n_epoch_revision', type=int, default=200)
 parser.add_argument('--n_epoch_estimate', type=int, default=20)
