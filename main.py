@@ -46,8 +46,8 @@ if args.dataset == 'mnist':
     args.num_classes = 10
     train_data = data_load.mnist_dataset(True, transform=transform_train(args.dataset), target_transform=transform_target,
                                          noise_rate=args.noise_rate, random_seed=args.seed)
-    val_data = data_load.mnist_dataset(False, transform=transform_test(args.dataset), target_transform=transform_target,
-                                       noise_rate=args.noise_rate, random_seed=args.seed)
+    #val_data = data_load.mnist_dataset(False, transform=transform_test(args.dataset), target_transform=transform_target,
+    #                                   noise_rate=args.noise_rate, random_seed=args.seed)
     test_data = data_load.mnist_test_dataset(transform=transform_test(args.dataset), target_transform=transform_target)
     estimate_state = True
     model = Lenet.Lenet()
